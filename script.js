@@ -14,6 +14,12 @@ function calcula(opera){
         } else if(opera == '/') {
             resultado = num1 / num2;
         }
+        if(resultado<0){
+            document.getElementById('resultado').style.color='red';
+        }
+        else{
+            document.getElementById('resultado').style.color='black';
+        }
         document.getElementById('resultado').textContent = 'resultado: ' + resultado;
     }
 }
